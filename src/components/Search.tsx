@@ -3,6 +3,7 @@ import axios from "axios";
 import { AiOutlineSearch } from "react-icons/ai";
 import ArtistCard from "./ArtistCard";
 import Card from "./Card";
+import TrackCard from "./TrackCard";
 function Search() {
   let [inpSuggestions, setInpSuggestion] = useState([]);
   let [artists, setArtist] = useState([]);
@@ -106,7 +107,7 @@ function Search() {
           <h4 className="px-1 fw-bold">Tracks</h4>
           <div className="d-flex flex-wrap justify-content-start">
             {tracks.map((track) => {
-              return <ArtistCard data={track} />;
+              return <TrackCard data={track} />;
             })}
           </div>
         </div>

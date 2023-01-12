@@ -22,7 +22,7 @@ function TrackCard(props: any) {
       )}
 
       <div className="card-body">
-        <p className="card-text">{props.data.title}</p>
+        <p className="card-text">{props.data.track.title}</p>
       </div>
     </div>
   );

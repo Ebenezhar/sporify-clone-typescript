@@ -5,7 +5,7 @@ function ArtistCard(props: any) {
 
   return (
     <div className="card m-2" style={{ width: "10rem" }}>
-      {/* {props.data.artist.avatar ? (
+      {props.data.artist.avatar ? (
         <img
           className="card-img-top p-2 overflow-hidden"
           src={props.data.artist.avatar}
@@ -19,7 +19,7 @@ function ArtistCard(props: any) {
           }
           alt="Card image cap"
         />
-      )} */}
+      )}
     </div>
   );
 }
