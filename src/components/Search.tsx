@@ -63,7 +63,6 @@ function Search() {
     e.preventDefault();
     option2.params.term = searchref.current.value;
     fetchOutput(option2);
-    // console.log("Hello");
   };
 
   return (
@@ -78,6 +77,7 @@ function Search() {
             list="suggestions"
             ref={searchref}
             onChange={handleChange}
+            onKeyPress={handleSubmit}
             className="form-control mx-2"
             type="search"
             placeholder="Search"
